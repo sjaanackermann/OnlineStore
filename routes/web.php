@@ -15,4 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('main');
+
+Route::get('products', function() {
+    return 'This is the list of products';
+})->name('products.index');
+
+Route::get('products/create', function (){
+    return 'This is the list of products';
+})->name('products.index');
